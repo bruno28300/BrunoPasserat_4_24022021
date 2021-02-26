@@ -1,0 +1,41 @@
+/// sizes declarations (margin ,padding, font, weight)
+
+$size: 6rem;
+$font-size: 4rem;
+$font-weight: 400;
+
+/// colors declarations
+
+$color-primary: #f3976c;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$color-white: #fff;
+
+/// colors effects
+
+$linear-gradient: linear-gradient(to bottom, $color-primary, $color-primary);
+
+/// border effects
+
+$border-rad: 4rem;
+
+/// shadow effects
+
+$box-shadow: $size $size $size darken($color-white, 10);
+$shadow-size: 0.55rem;
+
+/// flex
+
+$flex: (
+  display: flex,
+);
+
+/// breakpoints declarations
+
+$breakpoints: (
+  landscape-phones: 480px,
+  large-phones: 600px,
+  landscape-tablets: 768px,
+  desktops: 992px,
+  large-desktops: 1200px,
+);

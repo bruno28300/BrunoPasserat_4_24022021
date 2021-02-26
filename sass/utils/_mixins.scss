@@ -1,0 +1,55 @@
+@mixin shadow($color: darken($color-white, 10), $offset: $shadow-size) {
+  box-shadow: $offset/2 $offset $offset $color;
+}
+
+@mixin btn {
+  position: relative;
+  margin: $size auto;
+  padding: $size/3 $size;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: $font-size * 0.75;
+  background: $linear-gradient;
+  box-shadow: $size/2 $size/2 $size darken($color-white, 30);
+  border: none;
+  border-radius: $border-rad;
+  cursor: pointer;
+  z-index: 1;
+  & a {
+    text-decoration: none;
+    color: $color-white;
+  }
+  & a:hover {
+    color: $color-white;
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
+      border-radius: $border-rad;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      to bottom,
+      lighten($color-primary, 15),
+      darken($color-primary, 5)
+    );
+    box-shadow: $size/2 $size/2 $size darken($color-white, 35);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 1s;
+    border-radius: $border-rad;
+  }
+}
+
+@mixin mobile-only {
+  @media screen and (min-width: map-get($breakpoints, landscape-phones)) {
+    @content;
+  }
+}

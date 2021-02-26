@@ -1,0 +1,61 @@
+// image backgrounds
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../../img/travail-avec-surligneur.webp);
+  & img {
+    max-width: 100px;
+  }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: $size * 16;
+  margin-left: auto;
+  margin-right: auto;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    & .cards {
+      max-width: $size * 4.5;
+      padding-top: $size;
+    }
+  }
+}
+
+.highlight {
+  height: $size * 9;
+  background-image: url(../../img/travail-de-bureau.webp);
+  &__wrapper {
+    max-width: $size * 16;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: $size * 16;
+  margin-left: auto;
+  margin-right: auto;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  & .cards {
+    @include shadow;
+  }
+}
+
+.cta {
+  height: $size * 7;
+  background-image: url(../../img/travail-avec-surligneur.webp);
+}

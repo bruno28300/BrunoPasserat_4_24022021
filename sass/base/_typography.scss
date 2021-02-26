@@ -1,0 +1,18 @@
+.heading-home {
+  margin-bottom: $size;
+  line-height: $size;
+  font-weight: $font-weight + 200;
+  font-size: $font-size * 0.75;
+  &-sub {
+    @media (min-width: 480px) {
+      text-align: center;
+    }
+  }
+}
+
+h2 {
+}
+
+h3 {
+  font-size: $font-size/2;
+}

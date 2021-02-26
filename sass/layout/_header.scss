@@ -1,0 +1,30 @@
+.logo {
+  line-height: $size;
+}
+
+.header {
+  max-width: $size * 16;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+}
+ul {
+  display: flex;
+  & li {
+    display: inline-block;
+    padding: $size;
+    & a {
+      text-decoration: none;
+      &:active,
+      &:hover {
+        text-decoration: none;
+        border-top: 3px solid $color-primary;
+      }
+    }
+  }
+}

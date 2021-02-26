@@ -1,0 +1,97 @@
+// general rules
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // 10px div by def of 16px
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: darken($color-white, 90);
+  background: $color-white;
+  text-align: center;
+}
+
+// fonts
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212529;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+// links
+
+a {
+  color: #454d5d;
+  text-decoration: underline;
+  &::active,
+  &::focus,
+  &::hover {
+    color: #212529;
+    text-decoration: underline;
+  }
+}
+
+// lists
+
+ul {
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+// images
+
+img {
+  border-style: none;
+  vertical-align: middle;
+}
+
+// icons
+
+i {
+  width: $size * 0.75;
+}
+
+// buttons
+
+button {
+  border: 0;
+}
+
+// forms, blockquote
+
+blockquote,
+img,
+input,
+textarea {
+  max-width: 100%;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+}
