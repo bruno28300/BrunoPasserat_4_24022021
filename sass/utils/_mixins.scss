@@ -4,13 +4,14 @@
 
 @mixin btn {
   position: relative;
-  margin: $size auto;
-  padding: $size/3 $size;
+  margin: $size/2 auto $size;
+  padding: $size/3 $size/2;
   text-align: center;
   text-transform: uppercase;
-  font-size: $font-size * 0.75;
+  font-size: $font-size/3;
+  font-weight: $font-weight + 100;
   background: $linear-gradient;
-  box-shadow: $size/2 $size/2 $size darken($color-white, 30);
+  box-shadow: $size/2 $size/2 $size * 2 darken($color-white, 50);
   border: none;
   border-radius: $border-rad;
   cursor: pointer;
@@ -35,16 +36,36 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(
-      to bottom,
-      lighten($color-primary, 15),
-      darken($color-primary, 5)
-    );
-    box-shadow: $size/2 $size/2 $size darken($color-white, 35);
+    background: darken($color-primary, 10);
+    box-shadow: $size/2 $size/2 $size darken($color-white, 75);
     opacity: 0;
     z-index: -1;
     transition: opacity 1s;
     border-radius: $border-rad;
+  }
+}
+
+@mixin cards {
+  position: relative;
+  max-width: $size * 5.35;
+  margin: $size auto;
+  border-radius: $border-rad/2;
+  & img {
+    border-radius: $border-rad/2 $border-rad/2 0 0;
+  }
+  & h3 {
+    line-height: $size;
+    text-transform: uppercase;
+  }
+  & p {
+    padding: $size/3;
+    line-height: $font-size/2;
+  }
+  &-wrapper {
+    height: $size * 6;
+  }
+  & .icon-lg {
+    font-size: $size;
   }
 }
 

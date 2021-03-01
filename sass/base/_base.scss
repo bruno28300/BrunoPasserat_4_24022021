@@ -14,28 +14,10 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
-  line-height: 1.5;
-  color: darken($color-white, 90);
+  font-family: "helvetica", sans-serif;
+  color: darken($color-white, 70);
   background: $color-white;
   text-align: center;
-}
-
-// fonts
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #212529;
-}
-
-h1,
-h2 {
-  margin-top: 0;
-  margin-bottom: 2rem;
 }
 
 // links
@@ -54,7 +36,6 @@ a {
 // lists
 
 ul {
-  padding-left: 2rem;
   list-style-type: none;
 }
 

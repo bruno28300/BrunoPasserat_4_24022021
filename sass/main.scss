@@ -7,8 +7,10 @@
 
 @import "./components/buttons";
 
-@import "./layout/header";
-@import "./layout/footer";
-@import "./layout/content";
-
-@import "./pages/home.scss";
+@import "./blocks/banner.scss";
+@import "./blocks/cta.scss";
+@import "./blocks/footer";
+@import "./blocks/header";
+@import "./blocks/highlight";
+@import "./blocks/portfolio.scss";
+@import "./blocks/services.scss";

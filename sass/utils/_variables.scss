@@ -1,7 +1,7 @@
 /// sizes declarations (margin ,padding, font, weight)
 
 $size: 6rem;
-$font-size: 4rem;
+$font-size: 6rem;
 $font-weight: 400;
 
 /// colors declarations
@@ -23,6 +23,7 @@ $border-rad: 4rem;
 
 $box-shadow: $size $size $size darken($color-white, 10);
 $shadow-size: 0.55rem;
+$text-shadow: $size $size $size darken($color-white, 10);
 
 /// flex
 
