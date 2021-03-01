@@ -1,0 +1,28 @@
+// image backgrounds
+
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: darken($color-white, 70);
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.9;
+    background-image: url(../img/travail-avec-surligneur.webp);
+    background-size: cover;
+  }
+  & img {
+    margin-top: $size;
+    margin-bottom: $size/3;
+    z-index: 2;
+    opacity: 0.9;
+  }
+}

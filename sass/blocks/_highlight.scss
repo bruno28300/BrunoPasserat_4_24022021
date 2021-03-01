@@ -1,0 +1,9 @@
+.highlight {
+  height: $size * 9;
+  background-image: url(../img/travail-de-bureau.webp);
+  &__wrapper {
+    max-width: $size * 16;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
