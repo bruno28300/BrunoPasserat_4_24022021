@@ -80,7 +80,7 @@ nav ul {
   z-index: 1; }
   .btn a {
     text-decoration: none;
-    color: #364577; }
+    color: #1e2642; }
   .btn a:hover {
     color: #364577; }
   .btn:hover::after {
@@ -140,7 +140,7 @@ nav ul {
   padding: 6rem;
   line-height: 6rem;
   color: #1a1a1a;
-  background-color: #ed6525; }
+  background-color: #f3976c; }
   .footer h2 {
     margin: 0;
     font-size: 3rem; }

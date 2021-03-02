@@ -18,7 +18,7 @@
   z-index: 1;
   & a {
     text-decoration: none;
-    color: $color-secondary;
+    color: darken($color-secondary, 15);
   }
   & a:hover {
     color: $color-secondary;

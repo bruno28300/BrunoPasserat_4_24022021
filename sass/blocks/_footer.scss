@@ -2,7 +2,7 @@
   padding: $size;
   line-height: $size;
   color: darken($color-white, 90);
-  background-color: darken($color-primary, 15);
+  background-color: $color-primary;
   & h2 {
     margin: 0;
     font-size: $font-size/2;
