@@ -1,4 +1,12 @@
 .cta {
-  height: $size * 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   background-image: url(../img/travail-avec-surligneur.webp);
+  & h2 {
+    color: $color-primary;
+    background: darken($color-white, 70);
+    opacity: 0.7;
+  }
 }

@@ -126,8 +126,15 @@ h3 {
     opacity: 0.9; }
 
 .cta {
-  height: 42rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   background-image: url(../img/travail-avec-surligneur.webp); }
+  .cta h2 {
+    color: #f3976c;
+    background: #4d4d4d;
+    opacity: 0.7; }
 
 footer {
   padding: 6rem;
@@ -138,8 +145,7 @@ footer {
     color: #fff; }
 
 .footer {
-  position: relative;
-  top: -12rem; }
+  position: relative; }
   .footer__wrapper {
     display: flex;
     justify-content: space-between;
@@ -214,7 +220,8 @@ ul {
     max-width: 32.1rem;
     margin: 3rem auto;
     border-radius: 2rem;
-    box-shadow: 0.275rem 0.55rem 0.55rem #e6e6e6; }
+    box-shadow: 0.275rem 0.55rem 0.55rem #e6e6e6;
+    border: 1px solid #f7f7f7; }
     .portfolio .cards img {
       border-radius: 2rem 2rem 0 0; }
     .portfolio .cards h3 {
@@ -224,6 +231,9 @@ ul {
       line-height: 3rem; }
     .portfolio .cards-wrapper {
       height: 36rem; }
+    .portfolio .cards p {
+      font-size: 1.7142857143rem;
+      margin-bottom: 2rem; }
 
 .services {
   display: flex;
