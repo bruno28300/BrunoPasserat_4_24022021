@@ -1,5 +1,5 @@
 .highlight {
-  padding: $size;
+  padding: $size $size/2;
   background-image: url(../img/travail-de-bureau.webp);
   background-size: cover;
   background-attachment: fixed;
@@ -12,7 +12,7 @@
     opacity: 0.7;
     & h2 {
       margin-top: 0;
-      color: darken($color-primary, 1);
+      color: $color-primary;
     }
     & p {
       font-size: $font-size/3;

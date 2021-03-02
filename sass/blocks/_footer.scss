@@ -1,8 +1,8 @@
 .footer {
   padding: $size;
   line-height: $size;
-  color: $color-white;
-  background-color: darken($color-primary, 5);
+  color: darken($color-white, 90);
+  background-color: darken($color-primary, 15);
   & h2 {
     margin: 0;
     font-size: $font-size/2;
@@ -37,7 +37,8 @@
       list-style: none;
     }
     & li a {
-      color: darken($color-white, 15);
+      text-decoration: underline;
+      color: darken($color-white, 90);
       &:hover {
         margin: 0;
         border: none;

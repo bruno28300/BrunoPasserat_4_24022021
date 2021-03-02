@@ -9,8 +9,8 @@
   text-align: center;
   text-transform: uppercase;
   font-size: $font-size/3;
-  font-weight: $font-weight + 100;
-  background: $linear-gradient;
+  font-weight: $font-weight + 200;
+  background: $color-primary;
   box-shadow: $size/2 $size/2 $size * 2 darken($color-white, 50);
   border: none;
   border-radius: $border-rad;
@@ -18,10 +18,10 @@
   z-index: 1;
   & a {
     text-decoration: none;
-    color: $color-white;
+    color: $color-secondary;
   }
   & a:hover {
-    color: $color-white;
+    color: $color-secondary;
   }
   &:hover {
     &::after {
@@ -36,7 +36,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: darken($color-primary, 10);
+    background: darken($color-primary, 15);
     box-shadow: $size/2 $size/2 $size darken($color-white, 75);
     opacity: 0;
     z-index: -1;
