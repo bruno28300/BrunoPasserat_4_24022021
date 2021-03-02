@@ -18,6 +18,7 @@
     opacity: 0.9;
     background-image: url(../img/travail-avec-surligneur.webp);
     background-size: cover;
+    background-attachment: fixed;
   }
   & img {
     margin-top: $size;

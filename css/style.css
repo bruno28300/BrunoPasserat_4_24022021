@@ -117,7 +117,8 @@ h3 {
     z-index: 1;
     opacity: 0.9;
     background-image: url(../img/travail-avec-surligneur.webp);
-    background-size: cover; }
+    background-size: cover;
+    background-attachment: fixed; }
   .banner img {
     margin-top: 6rem;
     margin-bottom: 2rem;
@@ -179,12 +180,23 @@ ul {
         border-top: 3px solid #f3976c; }
 
 .highlight {
-  height: 54rem;
-  background-image: url(../img/travail-de-bureau.webp); }
+  padding: 6rem;
+  background-image: url(../img/travail-de-bureau.webp);
+  background-size: cover;
+  background-attachment: fixed; }
   .highlight__wrapper {
-    max-width: 96rem;
+    max-width: 60rem;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding: 3rem;
+    background: #4d4d4d;
+    opacity: 0.7; }
+    .highlight__wrapper h2 {
+      margin-top: 0;
+      color: #f39467; }
+    .highlight__wrapper p {
+      font-size: 2rem;
+      color: #fff; }
 
 .portfolio {
   display: flex;
