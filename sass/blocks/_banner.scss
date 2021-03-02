@@ -16,9 +16,18 @@
     width: 100%;
     z-index: 1;
     opacity: 0.9;
-    background-image: url(../img/travail-avec-surligneur.webp);
+    background-image: url(../img/travail-avec-surligneur-480w.webp);
     background-size: cover;
     background-attachment: fixed;
+    @media screen and (min-width: 480px) {
+      background-image: url(../img/travail-avec-surligneur-768w.webp);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../img/travail-avec-surligneur-1024w.webp);
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: url(../img/travail-avec-surligneur.webp);
+    }
   }
   & img {
     margin-top: $size;

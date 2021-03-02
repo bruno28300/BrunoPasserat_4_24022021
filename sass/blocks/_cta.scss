@@ -3,7 +3,17 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: url(../img/travail-avec-surligneur.webp);
+  background-image: url(../img/travail-avec-surligneur-480w.webp);
+  background-size: cover;
+  @media screen and (min-width: 480px) {
+    background-image: url(../img/travail-avec-surligneur-768w.webp);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../img/travail-avec-surligneur-1024w.webp);
+  }
+  @media screen and (min-width: 1024px) {
+    background-image: url(../img/travail-avec-surligneur.webp);
+  }
   & h2 {
     color: $color-primary;
     background: darken($color-white, 80);

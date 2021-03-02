@@ -1,8 +1,17 @@
 .highlight {
   padding: $size $size/2;
-  background-image: url(../img/travail-de-bureau.webp);
+  background-image: url(../img/travail-de-bureau-480w.webp);
   background-size: cover;
   background-attachment: fixed;
+  @media screen and (min-width: 480px) {
+    background-image: url(../img/travail-de-bureau-768w.webp);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../img/travail-de-bureau-1024w.webp);
+  }
+  @media screen and (min-width: 1024px) {
+    background-image: url(../img/travail-de-bureau.webp);
+  }
   &__wrapper {
     max-width: $size * 10;
     margin-left: auto;

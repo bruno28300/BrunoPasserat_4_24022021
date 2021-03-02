@@ -116,9 +116,18 @@ nav ul {
     width: 100%;
     z-index: 1;
     opacity: 0.9;
-    background-image: url(../img/travail-avec-surligneur.webp);
+    background-image: url(../img/travail-avec-surligneur-480w.webp);
     background-size: cover;
     background-attachment: fixed; }
+    @media screen and (min-width: 480px) {
+      .banner::before {
+        background-image: url(../img/travail-avec-surligneur-768w.webp); } }
+    @media screen and (min-width: 768px) {
+      .banner::before {
+        background-image: url(../img/travail-avec-surligneur-1024w.webp); } }
+    @media screen and (min-width: 1024px) {
+      .banner::before {
+        background-image: url(../img/travail-avec-surligneur.webp); } }
   .banner img {
     margin-top: 6rem;
     margin-bottom: 2rem;
@@ -130,7 +139,17 @@ nav ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: url(../img/travail-avec-surligneur.webp); }
+  background-image: url(../img/travail-avec-surligneur-480w.webp);
+  background-size: cover; }
+  @media screen and (min-width: 480px) {
+    .cta {
+      background-image: url(../img/travail-avec-surligneur-768w.webp); } }
+  @media screen and (min-width: 768px) {
+    .cta {
+      background-image: url(../img/travail-avec-surligneur-1024w.webp); } }
+  @media screen and (min-width: 1024px) {
+    .cta {
+      background-image: url(../img/travail-avec-surligneur.webp); } }
   .cta h2 {
     color: #f3976c;
     background: #333333;
@@ -255,9 +274,18 @@ ul {
 
 .highlight {
   padding: 6rem 3rem;
-  background-image: url(../img/travail-de-bureau.webp);
+  background-image: url(../img/travail-de-bureau-480w.webp);
   background-size: cover;
   background-attachment: fixed; }
+  @media screen and (min-width: 480px) {
+    .highlight {
+      background-image: url(../img/travail-de-bureau-768w.webp); } }
+  @media screen and (min-width: 768px) {
+    .highlight {
+      background-image: url(../img/travail-de-bureau-1024w.webp); } }
+  @media screen and (min-width: 1024px) {
+    .highlight {
+      background-image: url(../img/travail-de-bureau.webp); } }
   .highlight__wrapper {
     max-width: 60rem;
     margin-left: auto;
