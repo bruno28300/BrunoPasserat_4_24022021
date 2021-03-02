@@ -50,13 +50,16 @@ label {
 
 h1 {
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 600;
   color: #f3976c;
   z-index: 2; }
 
 h2 {
   margin-top: 6rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 400; }
 
 h3 {
   font-size: 2rem; }
@@ -103,7 +106,7 @@ h3 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: #4d4d4d;
+  background: #333333;
   overflow: hidden; }
   .banner::before {
     content: "";
@@ -197,7 +200,7 @@ ul {
   .portfolio .cards {
     position: relative;
     max-width: 32.1rem;
-    margin: 6rem auto;
+    margin: 3rem auto;
     border-radius: 2rem;
     box-shadow: 0.275rem 0.55rem 0.55rem #e6e6e6; }
     .portfolio .cards img {
@@ -206,43 +209,52 @@ ul {
       line-height: 6rem;
       text-transform: uppercase; }
     .portfolio .cards p {
-      padding: 2rem;
       line-height: 3rem; }
     .portfolio .cards-wrapper {
       height: 36rem; }
-    .portfolio .cards .icon-lg {
-      font-size: 6rem; }
 
 .services {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   max-width: 96rem;
-  min-width: 18rem;
   margin-left: auto;
   margin-right: auto; }
   .services__wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between; }
-    .services__wrapper .cards {
+    @media screen and (min-width: 1024px) {
+      .services__wrapper {
+        display: flex;
+        flex-direction: row; } }
+    .services__wrapper__cards {
       position: relative;
       max-width: 32.1rem;
-      margin: 6rem auto;
+      margin: 3rem auto;
       border-radius: 2rem;
-      max-width: 27rem;
-      padding-top: 6rem; }
-      .services__wrapper .cards img {
+      max-width: 27rem; }
+      .services__wrapper__cards img {
         border-radius: 2rem 2rem 0 0; }
-      .services__wrapper .cards h3 {
+      .services__wrapper__cards h3 {
         line-height: 6rem;
         text-transform: uppercase; }
-      .services__wrapper .cards p {
-        padding: 2rem;
+      .services__wrapper__cards p {
         line-height: 3rem; }
-      .services__wrapper .cards-wrapper {
+      .services__wrapper__cards-wrapper {
         height: 36rem; }
-      .services__wrapper .cards .icon-lg {
-        font-size: 6rem; }
+      .services__wrapper__cards--icon {
+        font-size: 6rem;
+        color: #364577; }
+      .services__wrapper__cards p {
+        font-size: 1.7142857143rem; }
+  .services .blockquote {
+    max-width: 54rem;
+    margin: auto;
+    padding: 2rem;
+    font-size: 2rem;
+    font-style: italic; }
+    .services .blockquote p {
+      margin-top: 2rem;
+      font-size: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */
