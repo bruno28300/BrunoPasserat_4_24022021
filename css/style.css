@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -37,21 +38,24 @@ label {
 h1 {
   font-size: 3rem;
   font-weight: 600;
-  color: #f3976c;
+  color: #ed6525;
   z-index: 2; }
 
 h2 {
   margin-top: 6rem;
   margin-bottom: 2rem;
   padding: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 400; }
+  @media screen and (min-width: 600px) {
+    h2 {
+      font-size: 3rem; } }
 
 h3 {
   font-size: 2rem; }
 
 a {
-  color: #4d4d4d; }
+  color: #1e2642; }
 
 ul {
   list-style-type: none; }
@@ -67,8 +71,8 @@ nav ul {
   text-align: center;
   text-transform: uppercase;
   font-size: 2rem;
-  font-weight: 500;
-  background: linear-gradient(to bottom, #f3976c, #f3976c);
+  font-weight: 600;
+  background: #f3976c;
   box-shadow: 3rem 3rem 12rem gray;
   border: none;
   border-radius: 4rem;
@@ -76,9 +80,9 @@ nav ul {
   z-index: 1; }
   .btn a {
     text-decoration: none;
-    color: #fff; }
+    color: #364577; }
   .btn a:hover {
-    color: #fff; }
+    color: #364577; }
   .btn:hover::after {
     opacity: 1;
     border-radius: 4rem; }
@@ -89,7 +93,7 @@ nav ul {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #ef763d;
+    background: #ed6525;
     box-shadow: 3rem 3rem 6rem #404040;
     opacity: 0;
     z-index: -1;
@@ -135,8 +139,8 @@ nav ul {
 .footer {
   padding: 6rem;
   line-height: 6rem;
-  color: #fff;
-  background-color: #f18654; }
+  color: #1a1a1a;
+  background-color: #ed6525; }
   .footer h2 {
     margin: 0;
     font-size: 3rem; }
@@ -161,11 +165,63 @@ nav ul {
   .partenaires__wrapper ul {
     list-style: none; }
   .partenaires__wrapper li a {
-    color: #d9d9d9; }
+    text-decoration: underline;
+    color: #1a1a1a; }
     .partenaires__wrapper li a:hover {
       margin: 0;
       border: none;
       color: #fff; }
+
+h1 {
+  font-size: 2.4rem; }
+  @media screen and (min-width: 600px) {
+    h1 {
+      font-size: 3rem; } }
+
+form {
+  margin: 6rem auto;
+  width: 30rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 2rem; }
+  @media screen and (min-width: 600px) {
+    form {
+      width: 54rem; } }
+  form div {
+    margin-top: 2rem; }
+    form div input {
+      height: 3rem;
+      width: 18rem;
+      box-sizing: border-box;
+      border: 1px solid #e6e6e6; }
+      @media screen and (min-width: 600px) {
+        form div input {
+          width: 30rem; } }
+      form div input:focus {
+        background: #fef4f0; }
+  form label {
+    display: inline-block;
+    width: 7.2rem;
+    margin-right: 1.5rem;
+    text-align: right; }
+  form p {
+    margin-top: 3rem; }
+  form textarea {
+    /* Même police pour tous les champs texte */
+    font: 1em sans-serif;
+    height: 5em;
+    width: 18rem;
+    border: 1px solid #e6e6e6;
+    vertical-align: top; }
+    @media screen and (min-width: 600px) {
+      form textarea {
+        width: 30rem; } }
+
+.fa-chevron-up {
+  font-size: 3rem;
+  line-height: 12rem;
+  color: #364577; }
 
 .header {
   max-width: 96rem;
@@ -198,7 +254,7 @@ ul {
         border-top: 3px solid #f3976c; }
 
 .highlight {
-  padding: 6rem;
+  padding: 6rem 3rem;
   background-image: url(../img/travail-de-bureau.webp);
   background-size: cover;
   background-attachment: fixed; }
@@ -211,7 +267,7 @@ ul {
     opacity: 0.7; }
     .highlight__wrapper h2 {
       margin-top: 0;
-      color: #f39467; }
+      color: #f3976c; }
     .highlight__wrapper p {
       font-size: 2rem;
       color: #fff; }
