@@ -14,20 +14,6 @@ body {
   background: #fff;
   text-align: center; }
 
-a {
-  color: #454d5d;
-  text-decoration: underline; }
-  a::active, a::focus, a::hover {
-    color: #212529;
-    text-decoration: underline; }
-
-ul {
-  list-style-type: none; }
-
-nav ul {
-  list-style: none;
-  padding: 0; }
-
 img {
   border-style: none;
   vertical-align: middle; }
@@ -63,6 +49,16 @@ h2 {
 
 h3 {
   font-size: 2rem; }
+
+a {
+  color: #4d4d4d; }
+
+ul {
+  list-style-type: none; }
+
+nav ul {
+  list-style: none;
+  padding: 0; }
 
 .btn {
   position: relative;
@@ -133,27 +129,43 @@ h3 {
   background-image: url(../img/travail-avec-surligneur.webp); }
   .cta h2 {
     color: #f3976c;
-    background: #4d4d4d;
+    background: #333333;
     opacity: 0.7; }
 
-footer {
+.footer {
   padding: 6rem;
   line-height: 6rem;
   color: #fff;
   background-color: #f18654; }
-  footer a {
-    color: #fff; }
-
-.footer {
-  position: relative; }
+  .footer h2 {
+    margin: 0;
+    font-size: 3rem; }
+  .footer address {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 4rem; }
   .footer__wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 96rem;
-    margin-left: auto;
-    margin-right: auto; }
+    max-width: 42rem;
+    margin: 3rem auto; }
   .footer .icon-md {
-    font-size: 3rem; }
+    font-size: 3rem;
+    color: #d9d9d9; }
+    .footer .icon-md:hover {
+      color: #fff; }
+
+.partenaires__wrapper {
+  display: flex;
+  justify-content: center; }
+  .partenaires__wrapper ul {
+    list-style: none; }
+  .partenaires__wrapper li a {
+    color: #d9d9d9; }
+    .partenaires__wrapper li a:hover {
+      margin: 0;
+      border: none;
+      color: #fff; }
 
 .header {
   max-width: 96rem;
@@ -195,7 +207,7 @@ ul {
     margin-left: auto;
     margin-right: auto;
     padding: 3rem;
-    background: #4d4d4d;
+    background: #333333;
     opacity: 0.7; }
     .highlight__wrapper h2 {
       margin-top: 0;

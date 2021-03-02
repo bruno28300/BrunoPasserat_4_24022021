@@ -18,3 +18,20 @@ h2 {
 h3 {
   font-size: $font-size/3;
 }
+
+// links
+
+a {
+  color: darken($color-white, 70);
+}
+
+// lists
+
+ul {
+  list-style-type: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}

@@ -20,30 +20,6 @@ body {
   text-align: center;
 }
 
-// links
-
-a {
-  color: #454d5d;
-  text-decoration: underline;
-  &::active,
-  &::focus,
-  &::hover {
-    color: #212529;
-    text-decoration: underline;
-  }
-}
-
-// lists
-
-ul {
-  list-style-type: none;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
 // images
 
 img {
