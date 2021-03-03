@@ -16,11 +16,10 @@
     <link rel="stylesheet" type="text/css" href="css/et-line.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <script src="js/jquery-2.1.0.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/blocs.js"></script>
+    <script src="js/jquery-2.1.0.js" defer></script>
+    <script src="js/bootstrap.js" defer></script>
+    <script src="js/blocs.js" defer></script>
     <script src="js/jquery.touchSwipe.js" defer></script>
-    <script src="js/gmaps.js"></script>
 
     <!-- Analytics -->
 
@@ -33,14 +32,16 @@
       <header>
         <header-wrap class="header">
           <div class="header__logo">
-            <img
-              src="img/la-chouette-agence.webp"
-              alt="Logo + texte La chouette agence"
-            />
+            <a href="./">
+              <img
+                src="img/la-chouette-agence.webp"
+                alt="Logo et texte de La chouette agence"
+              />
+            </a>
           </div>
           <nav class="header__nav">
             <ul>
-              <li><a href="#" class="active">Accueil</a></li>
+              <li><a href="./" class="active">Accueil</a></li>
               <li><a href="contact.html">Contactez-nous</a></li>
             </ul>
           </nav>
@@ -52,7 +53,7 @@
       <div class="banner">
         <img
           src="img/logo-la-chouette-agence.webp"
-          alt="Logo La chouette agence"
+          alt="Logo de La chouette agence"
         />
         <h1 class="banner__heading">La chouette agence</h1>
         <div class="btn"><a href="contact.html#form-header">Contact</a></div>
@@ -70,9 +71,9 @@
             <span class="et-icon-browser services__wrapper__cards--icon"></span>
             <h3 class="services__heading--sub">Web design</h3>
             <p>
-              Que vous ayez un site web qui a besoin d’un rafraîchissement ou
-              que vous partiez de zéro, laissez-nous vous réaliser un design
-              dont vous serez fier.
+              La création ou le rafraîchissement d'un site web, ça nous connaît
+              à la chouette agence. Laissez-nous vous réaliser un design dont
+              vous serez fier.
             </p>
           </div>
           <div class="cards services__wrapper__cards">
@@ -132,7 +133,10 @@
         <h2 class="portfolio__heading">Portfolio</h2>
         <div class="portfolio__wrapper">
           <div class="cards">
-            <img src="img/catalogues-couleur.webp" alt="Catalogues couleur" />
+            <img
+              src="img/catalogues-couleur.webp"
+              alt="Présentaion de catalogues couleur"
+            />
             <h3 class="heading-portfolio">Journal local</h3>
             <p class="detail">
               Création d'une nouvelle identité visuelle pour un journal lyonnais
@@ -141,7 +145,7 @@
           <div class="cards">
             <img
               src="img/photographe-avec-appareil.webp"
-              alt="Photographe avec appareil"
+              alt="Jeune femme photographe avec son appareil"
             />
             <h3 class="heading-portfolio">Photographes</h3>
             <p class="detail">
@@ -150,7 +154,10 @@
             </p>
           </div>
           <div class="cards">
-            <img src="img/materiel-photo.webp" alt="Matériel photo" />
+            <img
+              src="img/materiel-photo.webp"
+              alt="Accessoires de photographie et de voyage"
+            />
             <h3 class="heading-portfolio">Voyageur</h3>
             <p class="detail">
               Création site internet et des illustrations pour sublimer les
@@ -160,7 +167,7 @@
           <div class="cards">
             <img
               src="img/agence-de-mariage.webp"
-              alt="Agence de mariage sur Lyon"
+              alt="Ordinateur et accessoires de mariage"
             />
             <h3 class="heading-portfolio">Agence de mariage</h3>
             <p class="detail">
@@ -224,6 +231,11 @@
           </ul>
         </div>
       </footer>
+      <!-- Top Page -->
+
+      <a class="top-page scrollToTop" onclick="scrollToTarget('1')"
+        ><span class="fa fa-chevron-up"></span
+      ></a>
     </div>
   </body>
 </html>
