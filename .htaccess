@@ -1,0 +1,12 @@
+
+# Redirection vers https
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+
+# Redirection vers www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
