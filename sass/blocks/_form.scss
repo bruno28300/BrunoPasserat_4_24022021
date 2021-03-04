@@ -10,18 +10,18 @@ form {
   }
   & div {
     margin-top: $size/3;
-    & input {
-      height: $size/2;
-      width: $size * 3;
-      box-sizing: border-box;
-      border: 1px solid darken($color-white, 10);
-      @media screen and (min-width: 600px) {
-        width: $size * 5;
-      }
-
-      &:focus {
-        background: lighten($color-primary, 28);
-      }
+  }
+  & input {
+    height: $size/2;
+    width: $size * 3;
+    padding: $size/6;
+    box-sizing: border-box;
+    border: 1px solid darken($color-white, 10);
+    @media screen and (min-width: 600px) {
+      width: $size * 5;
+    }
+    &:focus {
+      background: lighten($color-primary, 28);
     }
   }
   & label {
@@ -38,8 +38,12 @@ form {
     font: 1em sans-serif;
     height: 5em;
     width: $size * 3;
+    padding: $size/6;
     border: 1px solid darken($color-white, 10);
     vertical-align: top;
+    &:focus {
+      background: lighten($color-primary, 28);
+    }
     @media screen and (min-width: 600px) {
       width: $size * 5;
     }

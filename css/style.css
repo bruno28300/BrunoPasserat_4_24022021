@@ -203,16 +203,17 @@ form {
       width: 54rem; } }
   form div {
     margin-top: 2rem; }
-    form div input {
-      height: 3rem;
-      width: 18rem;
-      box-sizing: border-box;
-      border: 1px solid #e6e6e6; }
-      @media screen and (min-width: 600px) {
-        form div input {
-          width: 30rem; } }
-      form div input:focus {
-        background: #fef4f0; }
+  form input {
+    height: 3rem;
+    width: 18rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6; }
+    @media screen and (min-width: 600px) {
+      form input {
+        width: 30rem; } }
+    form input:focus {
+      background: #fef4f0; }
   form label {
     display: inline-block;
     width: 7.2rem;
@@ -225,8 +226,11 @@ form {
     font: 1em sans-serif;
     height: 5em;
     width: 18rem;
+    padding: 1rem;
     border: 1px solid #e6e6e6;
     vertical-align: top; }
+    form textarea:focus {
+      background: #fef4f0; }
     @media screen and (min-width: 600px) {
       form textarea {
         width: 30rem; } }
