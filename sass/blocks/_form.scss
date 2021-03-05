@@ -1,5 +1,28 @@
-.form-header__heading {
-  color: darken($color-primary, 25);
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/travail-avec-surligneur-480w.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  @media screen and (min-width: 480px) {
+    background-image: url(../img/travail-avec-surligneur-768w.webp);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../img/travail-avec-surligneur-1024w.webp);
+  }
+  @media screen and (min-width: 1024px) {
+    background-image: url(../img/travail-avec-surligneur.webp);
+  }
+  & img {
+    margin-top: $size;
+    margin-bottom: $size/3;
+    z-index: 2;
+    opacity: 0.9;
+  }
+  &__heading {
+    margin-bottom: $size * 0.75;
+  }
 }
 
 form {
@@ -52,10 +75,4 @@ form {
       width: $size * 5;
     }
   }
-}
-
-.fa-chevron-up {
-  font-size: $font-size/2;
-  line-height: $size * 2;
-  color: $color-secondary;
 }

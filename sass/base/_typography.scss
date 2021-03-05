@@ -3,7 +3,7 @@
 h1 {
   font-size: $font-size * 0.7;
   font-weight: $font-weight + 500;
-  color: darken($color-primary, 25);
+  color: $color-primary;
   z-index: 2;
 }
 
