@@ -9,7 +9,7 @@
   &__logo {
     margin-right: $size/4;
     margin-left: $size/4;
-    line-height: $size * 1.5;
+    line-height: $size;
   }
   @media (min-width: 600px) {
     justify-content: space-between;

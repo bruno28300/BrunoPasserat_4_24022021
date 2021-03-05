@@ -2,8 +2,8 @@
 
 h1 {
   font-size: $font-size * 0.7;
-  font-weight: $font-weight + 200;
-  color: $color-primary;
+  font-weight: $font-weight + 500;
+  color: darken($color-primary, 25);
   z-index: 2;
 }
 

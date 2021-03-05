@@ -1,3 +1,7 @@
+.form-header__heading {
+  color: darken($color-primary, 25);
+}
+
 form {
   margin: $size auto;
   width: $size * 5;

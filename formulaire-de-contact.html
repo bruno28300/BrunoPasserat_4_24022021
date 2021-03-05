@@ -16,12 +16,10 @@
     <meta name="robots" content="index, follow" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.jpg" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="css/et-line.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <script src="js/jquery-3.6.0.min.js" defer></script>
     <script src="js/blocs.js" defer></script>
-    <script src="js/jquery.touchSwipe.js" defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -65,7 +63,9 @@
       <!-- Form Header -->
 
       <div class="form-header">
-        <h1 id="form-header">Contactez La chouette agence</h1>
+        <h1 id="form-header" class="form-header__heading">
+          Contactez La chouette agence
+        </h1>
       </div>
 
       <!-- Form -->
@@ -130,11 +130,25 @@
         </address>
 
         <div class="footer__wrapper">
-          <div class="social"><span class="fa fa-twitter icon-md"></span></div>
-          <div class="social"><span class="fa fa-facebook icon-md"></span></div>
-          <div class="social"><span class="fa fa-dribbble icon-md"></span></div>
           <div class="social">
-            <span class="fa fa-instagram icon-md"></span>
+            <a href="#" title="Retrouvez la chouette agence sur Twitter">
+              <span class="fa fa-twitter icon-md" aria-hidden="true"></span
+            ></a>
+          </div>
+          <div class="social">
+            <a href="#" title="Retrouvez la chouette agence sur Facebook">
+              <span class="fa fa-facebook icon-md" aria-hidden="true"></span
+            ></a>
+          </div>
+          <div class="social">
+            <a href="#" title="Retrouvez la chouette agence sur Dribble">
+              <span class="fa fa-dribbble icon-md" aria-hidden="true"></span
+            ></a>
+          </div>
+          <div class="social">
+            <a href="#" title="Retrouvez la chouette agence sur Instagram">
+              <span class="fa fa-instagram icon-md" aria-hidden="true"></span
+            ></a>
           </div>
         </div>
 
@@ -161,7 +175,10 @@
 
       <!-- Top Page -->
 
-      <a class="top-page scrollToTop" onclick="scrollToTarget('1')"
+      <a
+        class="top-page scrollToTop"
+        title="Haut de page"
+        onclick="scrollToTarget('1')"
         ><span class="fa fa-chevron-up"></span
       ></a>
     </div>

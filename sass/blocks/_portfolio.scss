@@ -13,10 +13,15 @@
   & .cards {
     @include cards;
     @include shadow;
-    border: 1px solid darken($color-white, 3);
+    border: 1px solid darken($color-white, 5);
     & p {
       font-size: $font-size/3.5;
       margin-bottom: $size/3;
+      padding-right: $size/6;
+      padding-left: $size/6;
     }
+  }
+  & a {
+    text-decoration: none;
   }
 }

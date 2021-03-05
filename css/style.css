@@ -37,8 +37,8 @@ label {
 
 h1 {
   font-size: 4.2rem;
-  font-weight: 600;
-  color: #f3976c;
+  font-weight: 900;
+  color: #cf4d11;
   z-index: 2; }
 
 h2 {
@@ -191,6 +191,9 @@ nav ul {
       border: none;
       color: #fff; }
 
+.form-header__heading {
+  color: #cf4d11; }
+
 form {
   margin: 6rem auto;
   width: 30rem;
@@ -251,7 +254,7 @@ form {
   .header__logo {
     margin-right: 1.5rem;
     margin-left: 1.5rem;
-    line-height: 9rem; }
+    line-height: 6rem; }
   @media (min-width: 600px) {
     .header {
       justify-content: space-between; } }
@@ -315,7 +318,7 @@ ul {
     margin: 3rem auto;
     border-radius: 2rem;
     box-shadow: 0.275rem 0.55rem 0.55rem #e6e6e6;
-    border: 1px solid #f7f7f7; }
+    border: 1px solid #f2f2f2; }
     .portfolio .cards img {
       border-radius: 2rem 2rem 0 0; }
     .portfolio .cards h3 {
@@ -327,7 +330,11 @@ ul {
       height: 36rem; }
     .portfolio .cards p {
       font-size: 1.7142857143rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      padding-right: 1rem;
+      padding-left: 1rem; }
+  .portfolio a {
+    text-decoration: none; }
 
 .services {
   display: flex;

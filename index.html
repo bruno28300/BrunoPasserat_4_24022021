@@ -14,12 +14,10 @@
     <meta name="robots" content="index, follow" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.jpg" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="css/et-line.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <script src="js/jquery-3.6.0.min.js" defer></script>
     <script src="js/blocs.js" defer></script>
-    <script src="js/jquery.touchSwipe.js" defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -53,7 +51,7 @@
           <nav class="header__nav">
             <ul>
               <li><a href="./" class="active">Accueil</a></li>
-              <li><a href="contact.html">Contactez-nous</a></li>
+              <li><a href="formulaire-de-contact.html">Contactez-nous</a></li>
             </ul>
           </nav>
         </header-wrap>
@@ -67,7 +65,9 @@
           alt="Logo de La chouette agence"
         />
         <h1 class="banner__heading">La chouette agence</h1>
-        <div class="btn"><a href="contact.html#form-header">Contact</a></div>
+        <div class="btn">
+          <a href="formulaire-de-contact.html#form-header">Contact</a>
+        </div>
       </div>
 
       <!-- Services -->
@@ -144,47 +144,56 @@
         <h2 class="portfolio__heading">Portfolio</h2>
         <div class="portfolio__wrapper">
           <div class="cards">
-            <img
-              src="img/catalogues-couleur.webp"
-              alt="Présentaion de catalogues couleur"
-            />
-            <h3 class="heading-portfolio">Journal local</h3>
-            <p class="detail">
-              Création d'une nouvelle identité visuelle pour un journal lyonnais
-            </p>
+            <a href="#">
+              <img
+                src="img/catalogues-couleur.webp"
+                alt="Présentaion de catalogues couleur"
+              />
+              <h3 class="heading-portfolio">Journal local</h3>
+              <p class="detail">
+                Création d'une nouvelle identité visuelle pour un journal
+                lyonnais
+              </p>
+            </a>
           </div>
           <div class="cards">
-            <img
-              src="img/photographe-avec-appareil.webp"
-              alt="Jeune femme photographe avec son appareil"
-            />
-            <h3 class="heading-portfolio">Photographes</h3>
-            <p class="detail">
-              Conception de la plateforme idéale pour mettre en valeur les
-              clichés des photographes
-            </p>
+            <a href="#">
+              <img
+                src="img/photographe-avec-appareil.webp"
+                alt="Jeune femme photographe avec son appareil"
+              />
+              <h3 class="heading-portfolio">Photographes</h3>
+              <p class="detail">
+                Conception de la plateforme idéale pour mettre en valeur les
+                clichés des photographes
+              </p>
+            </a>
           </div>
           <div class="cards">
-            <img
-              src="img/materiel-photo.webp"
-              alt="Accessoires de photographie et de voyage"
-            />
-            <h3 class="heading-portfolio">Voyageur</h3>
-            <p class="detail">
-              Création site internet et des illustrations pour sublimer les
-              vidéos et les articles de ce voyageur
-            </p>
+            <a href="#">
+              <img
+                src="img/materiel-photo.webp"
+                alt="Accessoires de photographie et de voyage"
+              />
+              <h3 class="heading-portfolio">Voyageur</h3>
+              <p class="detail">
+                Création site internet et des illustrations pour sublimer les
+                vidéos et les articles de ce voyageur
+              </p>
+            </a>
           </div>
           <div class="cards">
-            <img
-              src="img/agence-de-mariage.webp"
-              alt="Ordinateur et accessoires de mariage"
-            />
-            <h3 class="heading-portfolio">Agence de mariage</h3>
-            <p class="detail">
-              Création du site internet pour laprésentation détaillée de leurs
-              prestations.
-            </p>
+            <a href="#">
+              <img
+                src="img/agence-de-mariage.webp"
+                alt="Ordinateur et accessoires de mariage"
+              />
+              <h3 class="heading-portfolio">Agence de mariage</h3>
+              <p class="detail">
+                Création du site internet pour laprésentation détaillée de leurs
+                prestations.
+              </p>
+            </a>
           </div>
         </div>
       </section>
@@ -196,7 +205,7 @@
           Prêt pour redonner vie à votre projet ?<br />
           Contactez notre équipe !
         </h2>
-        <div class="btn"><a href="contact.html">Contact</a></div>
+        <div class="btn"><a href="formulaire-de-contact.html">Contact</a></div>
       </div>
 
       <!-- Footer -->
@@ -214,11 +223,25 @@
         </address>
 
         <div class="footer__wrapper">
-          <div class="social"><span class="fa fa-twitter icon-md"></span></div>
-          <div class="social"><span class="fa fa-facebook icon-md"></span></div>
-          <div class="social"><span class="fa fa-dribbble icon-md"></span></div>
           <div class="social">
-            <span class="fa fa-instagram icon-md"></span>
+            <a href="#" title="Retrouvez la chouette agence sur Twitter">
+              <span class="fa fa-twitter icon-md" aria-hidden="true"></span
+            ></a>
+          </div>
+          <div class="social">
+            <a href="#" title="Retrouvez la chouette agence sur Facebook">
+              <span class="fa fa-facebook icon-md" aria-hidden="true"></span
+            ></a>
+          </div>
+          <div class="social">
+            <a href="#" title="Retrouvez la chouette agence sur Dribble">
+              <span class="fa fa-dribbble icon-md" aria-hidden="true"></span
+            ></a>
+          </div>
+          <div class="social">
+            <a href="#" title="Retrouvez la chouette agence sur Instagram">
+              <span class="fa fa-instagram icon-md" aria-hidden="true"></span
+            ></a>
           </div>
         </div>
 
@@ -245,7 +268,10 @@
 
       <!-- Top Page -->
 
-      <a class="top-page scrollToTop" onclick="scrollToTarget('1')"
+      <a
+        class="top-page scrollToTop"
+        title="Haut de page"
+        onclick="scrollToTarget('1')"
         ><span class="fa fa-chevron-up"></span
       ></a>
     </div>
