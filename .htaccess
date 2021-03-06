@@ -11,6 +11,7 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\.
 RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Compression avec gzip
 SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
 
@@ -21,7 +22,7 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
-<FilesMatch "\.(ico|jpe?g|png|webp|css|gz)$">
+<FilesMatch "\.(ico|jpe?g|png|webp|css|gz|eot|ttf|woff|woff2|otf)$">
 Header set Cache-Control "max-age=2592000, public"
 </FilesMatch>
 <FilesMatch "\.(js)$">
@@ -41,8 +42,15 @@ ExpiresByType image/jpeg "access plus 1 month"
 ExpiresByType image/webp "access plus 1 month"
 ExpiresByType image/png "access plus 1 month"
 ExpiresByType text/css "access plus 1 month"
+ExpiresByType text/javascript "access plus 1 month"
 ExpiresByType text/x-javascript "access plus 1 month"
 ExpiresByType image/x-icon "access plus 1 year"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+ExpiresByType font/ttf "access plus 1 month"
+ExpiresByType font/woff "access plus 1 month"
+ExpiresByType font/woff2 "access plus 1 month"
+ExpiresByType font/otf "access plus 1 month"
+
 ExpiresDefault "access plus 2 days"
 </IfModule>
 # END Expires Headers
