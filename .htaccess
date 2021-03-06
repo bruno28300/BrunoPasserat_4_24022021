@@ -9,7 +9,7 @@ Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains
 # Redirection vers www
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 
 # Compression avec gzip
 SetOutputFilter DEFLATE
