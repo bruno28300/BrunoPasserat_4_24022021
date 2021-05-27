@@ -1,191 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <title>
-      L'agence webdesign La chouette agence à Lyon, la meilleure communication -
-      Formulaire de contact
-    </title>
-    <meta
-      name="description"
-      content="Formulaire pour contacter La chouette agence à Lyon"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
-    <meta name="robots" content="index, follow" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <script src="js/jquery-3.6.0.min.js" defer></script>
-    <script src="js/blocs.js" defer></script>
+<head>
+  <meta charset="utf-8" />
+  <title>
+    L'agence webdesign La chouette agence à Lyon, la meilleure communication -
+    Formulaire de contact
+  </title>
+  <meta name="description" content="Formulaire pour contacter La chouette agence à Lyon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="robots" content="index, follow" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-5TXEHB1650"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TXEHB1650"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-      gtag("config", "G-5TXEHB1650");
-    </script>
-  </head>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  <body>
-    <div class="main">
-      <!-- Header -->
+    gtag("config", "G-5TXEHB1650");
+  </script>
+</head>
 
-      <header>
-        <header-wrap class="header">
-          <div class="header__logo">
-            <a href="./#home">
-              <img
-                src="img/la-chouette-agence.webp"
-                alt="Logo et texte de La chouette agence"
-              />
-            </a>
-          </div>
-          <nav class="header__nav">
-            <ul>
-              <li><a href="./">Accueil</a></li>
-              <li><a href="#" class="active">Contactez-nous</a></li>
-            </ul>
-          </nav>
-        </header-wrap>
-      </header>
+<body>
+  <div class="main">
+    <!-- Header -->
 
-      <!-- Form Header -->
-
-      <div class="form-header">
-        <img
-          src="img/logo-la-chouette-agence.webp"
-          alt="Logo de La chouette agence"
-        />
-        <h1 id="form-header" class="form-header__heading">
-          Contactez La chouette agence
-        </h1>
-      </div>
-
-      <!-- Form -->
-
-      <div class="form">
-        <form action="#" method="post">
-          <div>
-            <label for="name">Nom</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              aria-label="name"
-              required
-            />
-          </div>
-          <div>
-            <label for="email">email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              aria-label="email"
-              required
-            />
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              aria-label="message"
-              required
-            ></textarea>
-          </div>
-          <p>Comment nous avez-vous connu ?</p>
-          <div>
-            <label for="provenance">Provenance</label>
-            <input
-              type="text"
-              id="provenance"
-              name="provenance"
-              aria-label="provenance"
-            />
-          </div>
-          <button class="btn" type="submit">Envoyer</button>
-        </form>
-      </div>
-
-      <!-- Footer -->
-
-      <footer class="footer">
-        <h2>La chouette agence</h2>
-        <address>
-          2 place Sathonay 69001 Lyon<br />
-          <a
-            href="mailto:contact@lachouetteagence.com"
-            title="La chouette agence : Contact"
-            >contact@lachouetteagence.com </a
-          ><br />
-          Ouvert de 9h à 18h, du lundi au vendredi
-        </address>
-
-        <div class="footer__wrapper">
-          <div class="social">
-            <a href="#" title="Retrouvez la chouette agence sur Twitter">
-              <span class="fa fa-twitter icon-md" aria-hidden="true"></span
-            ></a>
-          </div>
-          <div class="social">
-            <a href="#" title="Retrouvez la chouette agence sur Facebook">
-              <span class="fa fa-facebook icon-md" aria-hidden="true"></span
-            ></a>
-          </div>
-          <div class="social">
-            <a href="#" title="Retrouvez la chouette agence sur Dribble">
-              <span class="fa fa-dribbble icon-md" aria-hidden="true"></span
-            ></a>
-          </div>
-          <div class="social">
-            <a href="#" title="Retrouvez la chouette agence sur Instagram">
-              <span class="fa fa-instagram icon-md" aria-hidden="true"></span
-            ></a>
-          </div>
+    <header>
+      <header-wrap class="header">
+        <div class="header__logo">
+          <a href="./#home">
+            <img src="img/la-chouette-agence.webp" alt="Logo et texte de La chouette agence" />
+          </a>
         </div>
-
-        <h3 class="partenaires">Partenaires</h3>
-        <div class="partenaires__wrapper">
+        <nav class="header__nav">
           <ul>
-            <li>
-              <a
-                href="https://www.bp2i.fr/"
-                title="Création de sites Internet - Assistance informatique"
-                >BP2i</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.moneglisesurle.net/"
-                title="Solutions de visibilité en ligne pour les églises et associations chrétiennes"
-                >MESLN</a
-              >
-            </li>
+            <li><a href="./">Accueil</a></li>
+            <li><a href="#" class="active">Contactez-nous</a></li>
           </ul>
-        </div>
-      </footer>
+        </nav>
+      </header-wrap>
+    </header>
 
-      <!-- Top Page -->
+    <!-- Form Header -->
 
-      <a
-        class="top-page scrollToTop"
-        title="Haut de page"
-        onclick="scrollToTarget('1')"
-        ><span class="fa fa-chevron-up"></span
-      ></a>
+    <div class="form-header">
+      <img src="img/logo-la-chouette-agence.webp" alt="Logo de La chouette agence" />
+      <h1 id="form-header" class="form-header__heading">
+        Contactez La chouette agence
+      </h1>
     </div>
-  </body>
+
+    <!-- Form -->
+
+    <div class="form">
+      <form action="#" method="post">
+        <div>
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" aria-label="name" required />
+        </div>
+        <div>
+          <label for="email">email</label>
+          <input type="email" id="email" name="email" aria-label="email" required />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" aria-label="message" required></textarea>
+        </div>
+        <p>Comment nous avez-vous connu ?</p>
+        <div>
+          <label for="provenance">Provenance</label>
+          <input type="text" id="provenance" name="provenance" aria-label="provenance" />
+        </div>
+        <button class="btn" type="submit">Envoyer</button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <h2>La chouette agence</h2>
+      <address>
+        2 place Sathonay 69001 Lyon<br />
+        <a href="mailto:contact@lachouetteagence.com" title="La chouette agence : Contact">contact@lachouetteagence.com
+        </a><br />
+        Ouvert de 9h à 18h, du lundi au vendredi
+      </address>
+
+      <div class="footer__wrapper">
+        <div class="social">
+          <a href="#" title="Retrouvez la chouette agence sur Twitter">
+            <span class="fa fa-twitter icon-md" aria-hidden="true"></span></a>
+        </div>
+        <div class="social">
+          <a href="#" title="Retrouvez la chouette agence sur Facebook">
+            <span class="fa fa-facebook icon-md" aria-hidden="true"></span></a>
+        </div>
+        <div class="social">
+          <a href="#" title="Retrouvez la chouette agence sur Dribble">
+            <span class="fa fa-dribbble icon-md" aria-hidden="true"></span></a>
+        </div>
+        <div class="social">
+          <a href="#" title="Retrouvez la chouette agence sur Instagram">
+            <span class="fa fa-instagram icon-md" aria-hidden="true"></span></a>
+        </div>
+      </div>
+
+      <h3 class="partenaires">Partenaires</h3>
+      <div class="partenaires__wrapper">
+        <ul>
+          <li>
+            <a href="https://www.bp2i.fr/" title="Création de sites Internet - Assistance informatique">BP2i</a>
+          </li>
+          <li>
+            <a href="https://www.moneglisesurle.net/"
+              title="Solutions de visibilité en ligne pour les églises et associations chrétiennes">MESLN</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Top Page -->
+
+    <a class="top-page scrollToTop" title="Haut de page" onclick="scrollToTarget('1')"><span
+        class="fa fa-chevron-up"></span></a>
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js" defer></script>
+  <script src="js/blocs.js" defer></script>
+
+</body>
+
 </html>
